@@ -1,23 +1,3 @@
-/*
-  Motorcycle Accident Alert System
-  Board: Arduino Nano 33 IoT
-
-  Libraries:
-    - WiFiNINA
-    - PubSubClient
-    - Arduino_LSM6DS3
-    - ArduinoJson
-
-  Wiring:
-    FSR divider output -> A0
-    LED -> D2 through suitable resistor
-    Buzzer driver input -> D4
-    Push button -> D3 and GND (INPUT_PULLUP)
-
-  GPS is provided separately by the phone.
-  Raspberry Pi sends MESSAGE_SENT after Telegram confirms success.
-*/
-
 #include <WiFiNINA.h>
 #include <PubSubClient.h>
 #include <Arduino_LSM6DS3.h>
@@ -26,12 +6,12 @@
 
 // ---------- WIFI CONFIGURATION ----------
 
-const char* WIFI_SSID = "PRANAVIDEAPAD";
-const char* WIFI_PASSWORD = "12345678";
+const char* WIFI_SSID = "";
+const char* WIFI_PASSWORD = "";
 
 // ---------- MQTT CONFIGURATION ----------
 
-const char* MQTT_HOST = "192.168.137.124";
+const char* MQTT_HOST = "";
 const uint16_t MQTT_PORT = 1883;
 const char* MQTT_CLIENT_ID = "motorcycle_nano_01";
 
