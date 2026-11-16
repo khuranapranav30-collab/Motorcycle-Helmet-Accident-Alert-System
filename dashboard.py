@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Raspberry Pi motorcycle safety dashboard, MQTT receiver and Telegram notifier."""
 import json
 import os
 import queue
